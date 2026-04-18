@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Hobby Page!</title>
+  <style>
+    /* Fun background gradient */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffe066 0%, #ff6fb7 50%, #6ec6ff 100%);
+      min-height: 100vh;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    /* Big bouncy title at the top */
+    .big-title {
+      text-align: center;
+      background: #fff;
+      border-radius: 30px;
+      padding: 30px 20px 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      animation: popIn 0.7s ease;
+    }
+    .big-title .emoji-icon {
+      font-size: 72px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .big-title h1 {
+      font-size: 2.8em;
+      color: #ff3fa4;
+      margin: 0 0 8px;
+      text-shadow: 2px 3px 0px #ffe066;
+      letter-spacing: 1px;
+    }
+    .big-title p {
+      font-size: 1.2em;
+      color: #555;
+      margin: 0;
+    }
+
+    /* Section cards */
+    .card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 28px 30px;
+      margin-bottom: 28px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      animation: popIn 0.6s ease;
+    }
+
+    .card h2 {
+      font-size: 1.8em;
+      margin: 0 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card p {
+      font-size: 1.15em;
+      color: #444;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Intro section colors */
+    .intro h2   { color: #7c3aed; }
+    .intro       { border-left: 8px solid #7c3aed; }
+
+    /* Favorites section */
+    .favorites  { border-left: 8px solid #f97316; }
+    .favorites h2 { color: #f97316; }
+
+    .fav-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: linear-gradient(90deg, #fff7ed, #fff);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      border: 2px solid #fde68a;
+      transition: transform 0.2s;
+    }
+    .fav-item:hover {
+      transform: scale(1.02);
+    }
+    .fav-item:last-child {
+      margin-bottom: 0;
+    }
+    .fav-icon {
+      font-size: 2.4em;
+      flex-shrink: 0;
+    }
+    .fav-text h3 {
+      font-size: 1.2em;
+      margin: 0 0 5px;
+      color: #92400e;
+    }
+    .fav-text p {
+      font-size: 1em;
+      color: #555;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Why I Like It section */
+    .why        { border-left: 8px solid #10b981; }
+    .why h2     { color: #10b981; }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .why-bubble {
+      background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+      border-radius: 18px;
+      padding: 18px 16px;
+      text-align: center;
+      font-size: 1.05em;
+      color: #065f46;
+      font-weight: bold;
+      border: 2px solid #6ee7b7;
+      transition: transform 0.2s;
+    }
+    .why-bubble:hover {
+      transform: translateY(-4px);
+    }
+    .why-bubble .b-icon {
+      font-size: 2em;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      font-size: 1em;
+      color: #fff;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      padding-top: 10px;
+    }
+
+    /* Pop-in animation */
+    @keyframes popIn {
+      0%   { opacity: 0; transform: translateY(30px) scale(0.95); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* Mobile friendly */
+    @media (max-width: 500px) {
+      .big-title h1 { font-size: 2em; }
+      .card h2      { font-size: 1.4em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- ⭐ BIG TITLE SECTION -->
+    <div class="big-title">
+      <span class="emoji-icon">🎨</span>
+      <h1>I Love Drawing!</h1>
+      <p>My Hobby Page — Made with ❤️ by Alex, Grade 5</p>
+    </div>
+
+    <!-- 👋 SELF-INTRODUCTION SECTION -->
+    <div class="card intro">
+      <h2>👋 Hi, I'm Alex!</h2>
+      <p>
+        My name is <strong>Alex</strong> and I'm 10 years old. I'm in Grade 5 at Sunshine Elementary School.
+        My favourite hobby is <strong>drawing</strong>! I love making art almost every single day.
+        Whether it's doodling in my notebook or painting on a big canvas, art makes me really happy.
+        I've been drawing since I was 4 years old — that's 6 whole years of practice! 🖍️
+      </p>
+    </div>
+
+    <!-- ⭐ THREE FAVORITE THINGS SECTION -->
+    <div class="card favorites">
+      <h2>⭐ My 3 Favourite Things About Drawing</h2>
+
+      <div class="fav-item">
+        <span class="fav-icon">🌈</span>
+        <div class="fav-text">
+          <h3>Playing with Colours</h3>
+          <p>Mixing colours is like magic! Red + blue = purple. I love experimenting with watercolour paints to make cool colour combinations I've never seen before.</p>
+        </div>
+      </div>
+
+      <div class="fav-item">
+        <span class="fav-icon">🦕</span>
+        <div class="fav-text">
+          <h3>Drawing Animals & Dinosaurs</h3>
+          <p>I especially love drawing dinosaurs and animals. My T-Rex drawings are my best ones! I use YouTube tutorials to learn how to make them look realistic.</p>
+        </div>
+      </div>
+
+      <div class="fav-item">
+        <span class="fav-icon">📖</span>
+        <div class="fav-text">
+          <h3>Making My Own Comic Books</h3>
+          <p>I've made 5 mini comic books so far! My favourite one is about a superhero dog named Captain Biscuit who saves the world from an evil cat. 🐶🦸</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 💚 WHY I LIKE IT SECTION -->
+    <div class="card why">
+      <h2>💚 Why I Like Drawing</h2>
+      <p>Drawing is special to me for so many reasons. Here's what I love the most:</p>
+
+      <div class="why-grid">
+        <div class="why-bubble">
+          <span class="b-icon">😌</span>
+          It helps me relax when I feel stressed or tired.
+        </div>
+        <div class="why-bubble">
+          <span class="b-icon">💡</span>
+          It lets me share my big ideas and wild imagination!
+        </div>
+        <div class="why-bubble">
+          <span class="b-icon">🏆</span>
+          I feel proud when I finish a drawing I worked hard on.
+        </div>
+        <div class="why-bubble">
+          <span class="b-icon">👫</span>
+          My friends love when I draw pictures of them as superheroes!
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p>✏️ Thanks for visiting my page! Keep creating and never stop drawing! 🎨✨</p>
+    </div>
+
+  </div><!-- end container -->
+
+  <script>
+    // Add a little sparkle effect when you click anywhere on the page!
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // Listen for clicks anywhere on the body
+      document.body.addEventListener('click', function(e) {
+        createSparkle(e.clientX, e.clientY);
+      });
+
+      // Function to create a sparkle at (x, y) position
+      function createSparkle(x, y) {
+        var sparkles = ['⭐','✨','🌟','💫','🎨','❤️'];
+        var el = document.createElement('div');
+        el.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
+        el.style.position = 'fixed';
+        el.style.left = x + 'px';
+        el.style.top  = y + 'px';
+        el.style.fontSize = '1.6em';
+        el.style.pointerEvents = 'none';       // Don't block clicks
+        el.style.zIndex = '9999';
+        el.style.transition = 'transform 0.8s ease, opacity 0.8s ease';
+        el.style.transform = 'translateY(0px)';
+        el.style.opacity = '1';
+        document.body.appendChild(el);
+
+        // Animate it floating up and fading out
+        requestAnimationFrame(function() {
+          requestAnimationFrame(function() {
+            el.style.transform = 'translateY(-70px) scale(1.4)';
+            el.style.opacity   = '0';
+          });
+        });
+
+        // Remove the element after animation finishes
+        setTimeout(function() {
+          if (el.parentNode) el.parentNode.removeChild(el);
+        }, 900);
+      }
+
+    }); // end DOMContentLoaded
+  </script>
+</body>
+</html>
